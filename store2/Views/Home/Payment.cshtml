@@ -1,0 +1,108 @@
+﻿@model IEnumerable<store2.Models.products>
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Product Calculation</title>
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/font-awesome-4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="./productDisplay.js"></script>
+</head>
+<body>
+              
+
+
+
+
+    <section>
+
+
+
+        
+
+
+
+       
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-12 mt-5">
+
+            <div>
+                <!--M-->
+                <form method="POST" action="https://api-testbed.maxicashapp.com/PayEntryPost">
+
+                    <input type="hidden" name="PayType" value="MaxiCash">
+                    <input type="hidden" name="Currency" value="MaxiDollar">
+                    <input type="hidden" name="Telephone" value="{MAXICASH_TELEPHONE_NO}">
+                    <input type="hidden" name="Email" value="{MAXICASH_EMAIL}">
+                    <input type="hidden" name="Amount" value="@ViewBag.ProdAmount">
+                    <input type="hidden" name="MerchantID" value="232bb265d1854609b7dd68602f520340">
+                    <input type="hidden" name="MerchantPassword" value="736421bb2b704bc08b61ad6f5906ab7e">
+                    <input type="hidden" name="Language" value="En">
+                    <input type="hidden" name="Reference" value="@ViewBag.ProdRef">
+                    <input type="hidden" name="accepturl" value="https://localhost:7048/Home/PaymentSuccessful">
+                     <input type="hidden" name="cancelurl" value="https://localhost:7048/home/Cancel">
+                    <input type="hidden" name="declineurl" value="--">
+                    <input type="hidden" name="notifyurl" value="--">
+
+    
+
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-dark col-md-12 text-uppercase">Proceed With Your Payment</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="jquery.js"></script>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,29 @@
+* {
+    font-family: 'Poppins',sans-serif;
+}
+
+
+.top-h {
+    background: linear-gradient(to right,rgb(255, 0, 43),rgb(54, 52, 180));
+}
+
+.btn {
+    border: none;
+    background: linear-gradient(to right,rgb(255, 0, 43),rgb(54, 52, 180));
+}
+
+.Heading {
+    text-align: center;
+}
+
+.Top {
+    background: linear-gradient(to right,rgb(255, 0, 43),rgb(54, 52, 180));
+    font-style: inherit;
+    color: white;
+}
+
+.btn:hover {
+    border: none;
+    background: linear-gradient(to left,rgb(255, 0, 43),rgb(54, 52, 180));
+    
+}

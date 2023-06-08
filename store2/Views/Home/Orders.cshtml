@@ -1,0 +1,46 @@
+﻿@model IEnumerable<store2.Models.products>
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+ 
+<h3>@ViewBag.LastID</h3>
+<h1>WELCOME TO OUR ORDER LIST</h1>
+<div class="table-wrapper-scroll-y my-custom-scrollbar">
+    <table class="table table-borderless">
+        <thead>
+            <tr>
+                <th>Order ID</th>
+                <th>Product Name</th>
+                <th>Amount</th>
+                <th>Quantity</th>
+                <th>Order Status</th>
+                <th>Order Date</th>
+
+            </tr>
+        </thead>
+
+
+        <tbody>
+           
+                
+                @foreach (var item in Model )
+                {
+                <tr>
+                    <td>@item.ORDER_ID</td>
+                    <td>@item.PRODUCT_NAME</td>
+                    <td>@item.TOTAL_PRICE</td>
+                    <td>@item.QUANTITY</td>
+                    <td>@item.ORDER_STATUS</td>
+                    <td>@item.CREATED_DATE</td>
+                 </tr>
+                  
+                }
+     
+
+        </tbody>
+    </table>
+
+</div>

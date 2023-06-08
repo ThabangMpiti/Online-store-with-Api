@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head class="Top">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>PRIDE STORE</title>
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/font-awesome-4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  
+
+</head>
+<body>
+
+    <section class="top-h min-vh-100 pb-4 container-fluid">
+
+
+        <div class="row">
+            <div class="col-md-12">
+
+                
+                 <div>
+                    <a class="btn btn-danger" href=@Url.Action("Orders","Home")>CHECK ALL ORDERS</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+          
+            <div class="row">
+
+                <div class="col-6 col-sm-6 col-md-3 mt-3">
+
+                    <div class="card p-4 " style="max-width:550px ;">
+
+                        <div>
+                            <img id="img-1" class="img-fluid" src="https://media.takealot.com/covers_images/e1dcf8fdc5c6464faebf06e988c1aceb/s-zoom.file" alt="">
+                        </div>
+
+                        <div class="content">
+
+                            <p id="productName">Olevs Multifunctional</p>
+                            <h4 id="productPrice" class="mt-2">R5475</h4>
+                            <div class="text-center">
+                                <!--Going to the page with controller-->
+                                <a href="@Url.Action("html2","Home")" onclick="p1()" class="btn btn-dark">View Product</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-6 col-sm-6 col-md-3 mt-3">
+
+                    <div class="card p-4 " style="max-width:550px ;">
+
+                        <div>
+                            <img id="img-2" class="img-fluid" src="https://media.takealot.com/covers_tsins/63721640/63721640-1-zoom.jpeg" alt="">
+                        </div>
+
+                        <div class="content">
+
+                            <p id="productName2">Dragon Sculpture Waterproof </p>
+                            <h4 id="productPrice2" class="mt-2">R3000</h4>
+                            <div class="text-center">
+                                <!--Going to the page with controller-->
+                                <a href="@Url.Action("html2","Home")" onclick="p2()" class="btn btn-dark">View Product</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-6 col-md-3 mt-3">
+
+                    <div class="card p-4 " style="max-width:550px ;">
+
+                        <div>
+                            <img id="img-3" class="img-fluid" src="https://media.takealot.com/covers_tsins/44408981/4971850246404-1-pdpxl.jpg" alt="">
+                        </div>
+
+                        <div class="content">
+
+                            <p id="productName3">Casio Mens A158WA </p>
+                            <h4 id="productPrice3" class="mt-2">R1200</h4>
+                            <div class="text-center">
+                                <!--redirecting my pages from the other-->
+                                <a href="@Url.Action("html2","Home")" onclick="p3()" class="btn btn-dark">View Product</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 mt-3">
+
+                    <div class="card p-4 " style="max-width:550px ;">
+
+                        <div>
+                            <img id="img-4" class="img-fluid" src="https://media.takealot.com/covers_images/5a21f238ad9e4d4298c93bcd71c9b303/s-zoom.file" alt="">
+                        </div>
+
+                        <div class="content">
+
+                            <p id="productName4">Curren Brand Luxury</p>
+                            <h4 id="productPrice4" class="mt-2">R3500</h4>
+                            <div class="text-center">
+                                 <!--Going to the page with controller-->
+                                <a href="@Url.Action("html2","Home")" onclick="p4()" class="btn btn-dark">View Product</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <script src="jquery.js"></script>
+    <script src="/Practice.js"></script>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>

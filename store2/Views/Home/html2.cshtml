@@ -1,0 +1,139 @@
+﻿@model store2.Models.products
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Product Calculation</title>
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/font-awesome-4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="./productDisplay.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+
+
+
+    <section class="top-h min-vh-100 pb-4">
+
+        <div class="container">
+
+
+
+            <div class="row justify-content-center">
+
+                <div class="col-6 col-sm-6 col-md-3 mt-3">
+
+                    <div class="card p-4 " style="max-width:550px ;">
+
+                        <div>
+                            <img id="getPic" class="img-fluid" src="" alt="">
+                        </div>
+
+                        <div class="content">
+                            <!--creating my columns-->
+                            <p id="DproductName">Smart Watch 500x</p>
+                            <h4 id="DproductPrice" class="mt-2">R750</h4>
+                            <div class="text-center">
+                            </div>
+
+                            <h1>@ViewBag.PassName</h1>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-6 col-md-3 mt-3">
+
+                    <div class="card p-4 " style="max-width:550px ;">
+                        <!--My drop down-->
+                        <div class="content">
+                            <div class="text-center">
+                                <select id="getQ" onchange="quantity()" class="form-control mb-2">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+
+                                </select>
+                                <label style="font-size: 18px;" for="">TOTAL</label>
+                                <h5 id="tot" style="font-size: 25px;">R</h5>
+
+                              
+                                
+                                <!--INsert Order-->
+                                <form method="POST" action="html2">
+                                
+
+                                    <!--passing PRODUCT_NAME,TOTAL_PRICE -->
+                                    <input type="hidden"  asp-for="PRODUCT_NAME" id="PassName">
+                                    <input type="hidden"  asp-for="TOTAL_PRICE" id="PassPrice">
+                                    <input type="hidden" asp-for="QUANTITY" id="PassQuanity">
+
+
+                                    <button type="submit" onclick="order()" class="btn btn-dark">Purchase</button>
+
+                                </form>
+
+
+
+                                <!--  -->
+
+
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="jquery.js"></script>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
